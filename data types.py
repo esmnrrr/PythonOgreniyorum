@@ -14,6 +14,7 @@ b = "Selam cnmm"
 print(b[0:5])
 print(b.upper())
 print(b.replace("cnmm", "canim"))
+print(b.split()) #icine yazilana gore metni ayirir
 
 x = 22
 y = "Benim yasim maalesef ki {}"
@@ -28,9 +29,16 @@ d = 4j
 
 #5-list
 e = [1,2,3]
+e[0]
+e.clear()
+e.append(33)
+e.insert(0, 333)
+print(e)
 
-#6-tuple
-f = {1,2,3}
+#6-tuple : icerisinde manipulasyon yapilamayan sdc index numaralarini bulabilecegimiz listelerdir
+f = ("elma", "armut", "muz")
+index1 = tuple.index("muz")
+print(index1)
 
 #7-range
 g = range(9)
@@ -39,12 +47,15 @@ g = range(9)
 h = {"name":"Esmanur", "surname":"Tetik"}
 
 #9-set
-i = ()
+i = {1, 2, 3}
+j = {3, 4, 5}
+result = i | j #birlesim kumesi (and op) ortak elamanlar tekrar yazilmaz kumelerde oldugu gibi
+result = i & j #kesisim kumesi 
 
 #Logical Data Type 10-bool
-j = True or False
+k = True or False
 print(10>9)
 
 #Ondalik yuvarlama
-k = int(3.3)
+l = int(3.3)
 print(k)
